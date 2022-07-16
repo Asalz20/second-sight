@@ -1,0 +1,40 @@
+@use '../util/' as u;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 95vh;
+    padding: 1rem 1rem 1rem 2rem;
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__title {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    &__main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__main {
+        font-size: clamp(1rem, 7vw, 3.5rem);
+    }
+    &__main-experience {
+        font-size: clamp(0.8rem, 7vw, 3.5rem);
+    }
+    &__2nd-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    &__2nd {
+        width: auto;
+    }
+    &__side {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+}

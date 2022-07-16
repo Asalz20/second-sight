@@ -1,0 +1,51 @@
+@use '../util' as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: u.$fontFGL;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.push-down {
+  font-weight: 900;
+  font-family: u.$fontSF;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+.bold {
+  font-family: u.$fontSF;
+  font-weight: 900;
+}
+
+.push-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  & i {
+      color: var(--nav-color);
+  }
+}

@@ -1,0 +1,38 @@
+@use '../util/' as u;
+.clients {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    @include u.breakpoint(large) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__title-container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        @include u.breakpoint(large) {
+            width: 50%;
+            align-items: center;
+            max-width: 30rem;
+        }
+    }
+    &__title {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+    &__logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include u.breakpoint(large) {
+            width: 73%;
+            max-width: 32rem;
+        }
+    }
+    &__logo {
+        height: auto;
+        width: 250px;
+        padding: 1rem;
+    }
+}
